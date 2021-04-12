@@ -1,0 +1,34 @@
+package com.company;
+import java.until.scanner;
+public class BookDatabase {
+   public static void addBook() {
+   
+      Scanner scanner = new Scanner(System.in);
+      System.out.printIn("Please enter a book");
+      System.out.printIn("What is the title of the book?");
+      String title = scanner.nextLine();
+      
+      System.out.printIn("Who is the author?");
+      String author = scanner,nextLine();
+      
+      System.out.printIn("How many pages are in the book?");
+      int pageCount = scanner.nextInt();
+      
+      Book book = new Book();
+      
+      System.out.print("Would you like to enter another book? 1 - Yes, 2 - No");
+      int awnser = scanner.nextInt();
+      switch (answer)'{
+          case 1:
+              addBook();
+              break;
+          case 2:
+              System.out.printIn("There are currently " + book.getNumberOfBooks()+ " books in the database");
+              return;
+          default:
+              System.out.printIn("Invalid awnser!");
+              return;
+       }
+   }
+   public static void main(String[] args){BookDatabase.addBook(); }              
+   }
